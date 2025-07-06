@@ -1,0 +1,64 @@
+/* Gradient background pada body */
+body {
+  background: linear-gradient(to bottom, #fff5eb, #ffe8d6);
+}
+
+/* Efek hover yang lebih hidup */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tambahan transisi lembut */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animasi fade-in yang halus */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Penekanan untuk harga */
+.text-red-600 {
+  color: #e63946;
+}
+
+/* Warna latar belakang produk yang lebih lembut */
+.bg-orange-50 {
+  background-color: #fff9f4;
+}
+
+/* Border top Flash Sale lebih menyala */
+.border-orange-500 {
+  border-top-color: #f97316;
+}
+
+/* Warna-warna teks bagian footer agar tidak terlalu kusam */
+footer {
+  background: linear-gradient(to top, #fef3c7, #ffffff);
+}
+
+/* Ikon media sosial jadi bulat dan hover */
+footer img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* QR code dan badge store lebih mencolok */
+footer .border {
+  border-color: #f97316;
+  border-width: 2px;
+  border-radius: 8px;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Tambahkan baris ini -->
+</head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belanja Yukss</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slideIn {
+      animation: slideIn 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-orange-500 to-red-500 text-white shadow animate-slideIn">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <h1 class="text-2xl font-bold tracking-wide">Belanja Yukss</h1>
+      <div class="flex items-center gap-2 w-full max-w-lg">
+        <input type="text" placeholder="Cari di Belanja Yukss..." class="rounded w-full p-2 text-black focus:outline-none" />
+        <button class="bg-white text-orange-600 px-3 py-2 rounded shadow hover:scale-105 transition">
+          <i data-lucide="search" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="flex gap-4 items-center">
+        <i data-lucide="bell" class="w-5 h-5 hover:text-yellow-300 cursor-pointer transition"></i>
+        <i data-lucide="user" class="w-5 h-5 hover:text-yellow-300 cursor-pointer transition"></i>
+        <i data-lucide="shopping-cart" class="w-5 h-5 hover:text-yellow-300 cursor-pointer transition"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow sticky top-0 z-10 animate-slideIn">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex gap-6 font-semibold text-sm text-orange-600">
+      <button>Kategori</button>
+      <button>Flash Sale</button>
+      <button>Belanja Yukss Mall</button>
+      <button>Promo</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <!-- Sidebar Kategori -->
+    <aside class="bg-white rounded shadow p-4 animate-slideIn">
+      <h2 class="font-semibold text-lg mb-2 text-orange-500">Kategori</h2>
+      <ul class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+        <li>Elektronik</li>
+        <li>Fashion Pria</li>
+        <li>Fashion Wanita</li>
+        <li>Handphone</li>
+        <li>Kesehatan</li>
+        <li>Rumah Tangga</li>
+      </ul>
+    </aside>
+
+    <!-- Produk -->
+    <section class="md:col-span-2 space-y-6 animate-slideIn">
+<!-- Flash Sale -->
+<div class="bg-white rounded shadow p-4 border-t-4 border-orange-500">
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-lg font-bold text-orange-600 uppercase">Flash Sale</h2>
+    <button class="text-sm text-red-500 hover:underline">Lihat Semua</button>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <!-- 10 Produk Flash Sale -->
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7r98z-lsatpbfmj51i8c@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Power Bank">
+      <p class="text-sm font-semibold text-red-600">Rp99.000</p>
+      <p class="text-xs text-gray-500">Power Bank 60000mAh 4 USB Fast Charging</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7rbkc-m6vy4406s2w716.webp" class="h-32 w-full object-cover rounded mb-2" alt="Headphone">
+      <p class="text-sm font-semibold text-red-600">Rp4.554.000</p>
+      <p class="text-xs text-gray-500">SONY WH-1000XM5 Wireless Noise Cancelling Headphones with Hi-Res Audio, Bluetooth 5.2, 30H Battery, LDAC​</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7rase-m47bnntsgc5j6d.webp" class="h-32 w-full object-cover rounded mb-2" alt="LED Strip">
+      <p class="text-sm font-semibold text-red-600">Rp21.000</p>
+      <p class="text-xs text-gray-500">OSIDEN（COD）Lampu Led Strip 5M 10M 15M 20M led strip rgb 5050 Set lengkap adaptor jarak jauh lampu warna warni Lampu Hias</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="10cdb385213efdd537a595c3378f3212@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Mouse Wireless">
+      <p class="text-sm font-semibold text-red-600">Rp85.000</p>
+      <p class="text-xs text-gray-500">SKU-1059 MOUSE GAMING WIRELESS LED T-WOLF Q13 (RGB) SILENT MOUSE TWOLF</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7r991-lm5wdxd7s1svc5@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Case HP">
+      <p class="text-sm font-semibold text-red-600">Rp20.000</p>
+      <p class="text-xs text-gray-500">Case HP Softshell</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7r98q-lln9mbffgjwkfc@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Earphone Kabel">
+      <p class="text-sm font-semibold text-red-600">Rp25.000</p>
+      <p class="text-xs text-gray-500">Earphone Kabel</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7r98p-lllwgyslrpsm49@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Mini Fan">
+      <p class="text-sm font-semibold text-red-600">Rp39.000</p>
+      <p class="text-xs text-gray-500">Kipas Angin Mini USB</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7rbka-m97vubpr9l3x6f@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Flashdisk 32GB">
+      <p class="text-sm font-semibold text-red-600">Rp45.000</p>
+      <p class="text-xs text-gray-500">Flashdisk 32GB USB 3.0</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134201-23020-597z9xxegknv6b.webp" class="h-32 w-full object-cover rounded mb-2" alt="Keyboard">
+      <p class="text-sm font-semibold text-red-600">Rp110.000</p>
+      <p class="text-xs text-gray-500">Keyboard USB LED</p>
+    </div>
+    <div class="bg-orange-50 p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7rbk6-m9e98ivzs3r634_tn.jpeg" class="h-32 w-full object-cover rounded mb-2" alt="Charger">
+      <p class="text-sm font-semibold text-red-600">Rp65.000</p>
+      <p class="text-xs text-gray-500">Charger Fast Charging</p>
+    </div>
+  </div>
+</div>
+
+<!-- Rekomendasi -->
+<div class="bg-white rounded shadow p-4 mt-6">
+  <h2 class="text-lg font-bold mb-4 text-orange-600">Rekomendasi Untukmu</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <!-- 10 Produk Rekomendasi -->
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7rbkc-mauuovmrqob624@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Botol Minum">
+      <p class="text-sm font-semibold text-gray-800">Botol Minum 1 Liter</p>
+      <p class="text-xs text-gray-500">Rp15.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7ra0m-mbbt4my4prhb0a.webp" class="h-32 w-full object-cover rounded mb-2" alt="Tumbler">
+      <p class="text-sm font-semibold text-gray-800">Tumbler Stainless</p>
+      <p class="text-xs text-gray-500">Rp40.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7r98u-lowcsulxdxnl13.webp" class="h-32 w-full object-cover rounded mb-2" alt="Kaos Polos">
+      <p class="text-sm font-semibold text-gray-800">Kaos Polos Pria</p>
+      <p class="text-xs text-gray-500">Rp35.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="5d063f4c982d4d6c2490a2024c19db91@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Dompet Kulit">
+      <p class="text-sm font-semibold text-gray-800">Dompet Kulit Pria</p>
+      <p class="text-xs text-gray-500">Rp75.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7ra0q-mbc2twrci6wo7d@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Tas Selempang">
+      <p class="text-sm font-semibold text-gray-800">Tas Selempang Kecil</p>
+      <p class="text-xs text-gray-500">Rp55.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="sg-11134201-22100-1wzrod6252iv3f@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Buku Catatan">
+      <p class="text-sm font-semibold text-gray-800">Buku Catatan A5</p>
+      <p class="text-xs text-gray-500">Rp12.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="sg-11134201-7rfhh-m9k1kylej6a9dc@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Pulpen Gel">
+      <p class="text-sm font-semibold text-gray-800">Pulpen Gel 0.5mm</p>
+      <p class="text-xs text-gray-500">Rp4.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7rbk4-m8emx3u4cett26@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Spidol Warna">
+      <p class="text-sm font-semibold text-gray-800">Spidol Warna 12pcs</p>
+      <p class="text-xs text-gray-500">Rp18.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="id-11134207-7r98o-lkqbgz4giiyd4d@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Gunting Kuku">
+      <p class="text-sm font-semibold text-gray-800">Gunting Kuku 3in1</p>
+      <p class="text-xs text-gray-500">Rp10.000</p>
+    </div>
+    <div class="bg-white p-2 rounded shadow hover:scale-105 transition">
+      <img src="sg-11134201-7qve9-lk1xurl0zmpjf7@resize_w900_nl.webp" class="h-32 w-full object-cover rounded mb-2" alt="Tempat Pensil">
+      <p class="text-sm font-semibold text-gray-800">Tempat Pensil Transparan</p>
+      <p class="text-xs text-gray-500">Rp13.000</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-white text-gray-600 text-sm border-t mt-12 pt-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6 animate-slideIn">
+      <!-- Layanan Pelanggan -->
+      <div>
+        <h3 class="font-semibold text-black mb-2">Layanan Pelanggan</h3>
+        <ul class="space-y-1 text-sm">
+          <li>Bantuan</li><li>Metode Pembayaran</li><li>Lacak Pesanan</li><li>Pengembalian</li>
+        </ul>
+      </div>
+
+      <!-- Jelajahi Shopee -->
+      <div>
+        <h3 class="font-semibold text-black mb-2">Jelajahi Belanja Yukss</h3>
+        <ul class="space-y-1 text-sm">
+          <li>Tentang Kami</li><li>Flash Sale</li><li>Belanja Yukss Mall</li>
+        </ul>
+      </div>
+
+      <!-- Pembayaran & Pengiriman -->
+      <div>
+        <h3 class="font-semibold text-black mb-2">Pembayaran</h3>
+        <div class="flex flex-wrap gap-2">
+          <img src="Image 6 Jul 2025, 14.35.35.png" class="w-12" />
+          <img src="Image 6 Jul 2025, 14.37.15.png" class="w-12" />
+          <img src="Image 6 Jul 2025, 14.38.00.png" class="w-12" />
+        </div>
+        <h3 class="font-semibold text-black mt-4 mb-2">Pengiriman</h3>
+        <div class="flex gap-2 flex-wrap">
+          <img src="Image 6 Jul 2025, 14.41.28.png" class="w-14" />
+          <img src="Image 6 Jul 2025, 14.42.21.png" class="w-14" />
+        </div>
+      </div>
+
+      <!-- Sosial Media -->
+      <div>
+        <h3 class="font-semibold text-black mb-2">Ikuti Kami</h3>
+        <div class="flex gap-2">
+          <img src="https://cdn-icons-png.flaticon.com/24/145/145802.png" alt="FB" />
+          <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="IG" />
+          <img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="TW" />
+        </div>
+      </div>
+
+      <!-- Aplikasi -->
+      <div class="flex flex-col items-center justify-center text-center md:items-center">
+  <h3 class="font-semibold text-black mb-2">Download Aplikasi</h3>
+  <img src="Image 6 Jul 2025, 14.45.08.png" class="w-16 h-auto mb-2" alt="Logo Belanja Yukss" />
+ <div class="flex gap-2 mt-2 justify-center">
+  <img src="Image 6 Jul 2025, 14.55.26.png" class="h-9" alt="App Store" />
+  <img src="Image 6 Jul 2025, 15.02.33.png" class="h-9" alt="Google Play" />
+</div>
+
+</div>
+
+    </div>
+    <div class="text-center text-xs text-gray-500 py-6 mt-6 border-t">
+      &copy; Belanja Yukss 2025. Hak Cipta Dilindungi | Dibuat Oleh Nasrullah Tasrun
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
